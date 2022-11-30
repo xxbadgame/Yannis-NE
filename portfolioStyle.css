@@ -32,14 +32,39 @@
     position: fixed;
     top: 39px;
     right: 50px;
-    
+    list-style: none;
 }
 
-.banner .navigation a{
-    margin: 0px 25px;
+.btnNav a{
     color: white;
     text-decoration: none;
 }
+
+.btnNav{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 30px;
+}
+
+.btnNav::after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background-color: #4CB944;
+    display: block;
+    transition: .5s ease-in-out;
+  }
+  
+.btnNav:hover::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: #4CB944;
+    display: block;
+  }
 
 .presentation{
     position: absolute;
@@ -47,8 +72,70 @@
     left: 50%;
     transform: translate(-50%,-50%);
     color: white;
+    text-align: center;
 }
 
-.presentation button{
-    margin: 10px;
+.presentation h1{
+    font-size: 70px;
+}
+
+.presentation hr{
+    width: 250px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 0.5px solid #4CB944;
+}
+
+.presentation p{
+    font-size: 20px;
+    margin: 20px;
+}
+
+.presentation .btn a{
+    text-decoration: none;
+    color: #4CB944;
+    transition-duration: 0.4s;
+}
+
+.presentation .btn{
+    font-size: 18px;
+    margin: 20px;
+    width: 150px;
+    height: 75px;
+    background: none;
+    border: 2px solid #4CB944;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+}
+
+.presentation .btn:hover{
+    background-color: #4CB944;
+    color: white;
+}
+
+.presentation .btn:hover a{
+    color: white;
+}
+
+.logoArea ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+}
+
+.logoArea ul li{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin: 20px;
+    font-size: 20px;
+    background-color: white;
+    line-height: 40px;
+    
+}
+
+.logoArea ul li a{
+    color: black;
 }
