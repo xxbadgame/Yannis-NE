@@ -13,10 +13,26 @@
 }
 
 .banner{
+    width: 100vw;
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
+.banner img{
+    width: 100px;
+    height: 100px;
+}
+
+.banner .navigation{
+    display: flex;
+    margin-right: 20px;
+}
+
+/*
 .banner img{
     width: 100px;
     height: 100px;
@@ -27,13 +43,16 @@
 }
 
 .banner .navigation{
+    height: 95px;
     display: flex;
-    margin-right: 100px;
     position: fixed;
-    top: 39px;
-    right: 50px;
+    top: 10px;
+    right: 60px;
     list-style: none;
 }
+
+*/
+
 
 .btnNav a{
     color: white;
@@ -46,7 +65,7 @@
     cursor: pointer;
     font-size: 20px;
     text-decoration: none;
-    margin: 30px;
+    margin: 25px;
 }
 
 .btnNav::after{
@@ -65,6 +84,8 @@
     background-color: #4CB944;
     display: block;
   }
+
+
 
 .presentation{
     position: absolute;
@@ -133,9 +154,135 @@
     font-size: 20px;
     background-color: white;
     line-height: 40px;
+    transition-duration: 0.4s ;
+}
+
+
+.logoArea ul li:hover{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin: 20px;
+    font-size: 20px;
+    background-color: #4CB944;
+    line-height: 40px;
     
 }
 
 .logoArea ul li a{
     color: black;
+    transition-duration: 0.4s;
+}
+
+.logoArea ul li:hover a{
+    color: white;
+}
+
+.aboutme{
+    min-height: 100vh;
+    background-color:#0F0E0F;
+    color: white;
+    text-align: center;
+    
+}
+
+.aboutme h1{
+    padding: 100px;
+}
+
+.details-about{
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 10%;
+}
+
+.aboutme .details-about img{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    margin: 30px;
+    justify-content: center;
+}
+
+.aboutme .details-about p{
+    object-fit: contain;
+    text-align: start;
+}
+
+.experience{
+    text-align: center;
+    min-height: 100vh;
+    background-color: #000;
+    color: white;
+}
+
+.experience h1{
+    padding: 100px;
+}
+
+.experience img{
+    width: 100px;
+    height: 100px;
+}
+
+.portfolio{
+    text-align: center;
+    min-height: 100vh;
+    background-color: #0F0E0F;
+    color: white;
+}
+
+.portfolio h1{
+    padding: 100px;
+}
+
+.portfolio img{
+    width: 100px;
+    height: 100px;
+}
+
+.contact{
+    text-align: center;
+    min-height: 70vh;
+    background-color: #000;
+    color: white;
+}
+
+.contact h1{
+    padding-top: 100px;
+    padding-inline: 100px;
+}
+
+.contact img{
+    width: 100px;
+    height: 100px;
+}
+
+#map { height: 300px; }
+
+footer{
+    color: white;
+    background-color: #000;
+    padding: 50px 0px;
+}
+
+@media screen and (max-width : 900px){
+    .chronologie{
+        display: none;
+    }
+
+    .banner .navigation{
+        display: none;
+    }
+
+    .details-about{
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        left: 10%;
+    }
 }

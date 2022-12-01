@@ -6,17 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="portfolioStyle.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-    <title>Portfolio</title>
     <script src="https://kit.fontawesome.com/ac267a82f0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
+    <title>Portfolio</title>
 </head>
     <header>
         <div id="particles-js">
-            <div class="banner">
-                <img src="image/logo.png" alt="logo">
+            <div id="home" class="banner">
+                <a href="#home"><img src="image/logo.png" alt="logo"></a>
                 <ul class="navigation">
-                    <li><button class="btnNav"><a href="#">ABOUT ME</a></button></li>
-                    <li><button class="btnNav"><a href="#">EXPERIENCE</a></button></li>
-                    <li><button class="btnNav"><a href="#">PORTFOLIO</a></button></li>
+                    <li><button class="btnNav"><a href="#am">ABOUT ME</a></button></li>
+                    <li><button class="btnNav"><a href="#xp">EXPERIENCE</a></button></li>
+                    <li><button class="btnNav"><a href="#pf">PORTFOLIO</a></button></li>
+                    <li><button class="btnNav"><a href="#ct">CONTACT</a></button></li>
                 </ul>
             </div>
             <div class="presentation">
@@ -31,12 +38,12 @@
                             </a>
                         </li>
                         <li>
-                            <a href="https://fr-fr.facebook.com/">
+                            <a href="https://www.linkedin.com/in/yannis-nzue-essono-0089571a6/">
                                 <i class="fa-brands fa-linkedin-in"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://fr-fr.facebook.com/">
+                            <a href="https://github.com/xxbadgame">
                                 <i class="fa-brands fa-github"></i>
                             </a>
                         </li>
@@ -50,13 +57,85 @@
        
     </header>
     <body>
+        <div class="aboutme">
+            <h1 id="am">ABOUT ME</h1>
+            <div class="details-about">
+                <img src="image/logo.png" alt="photo">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    It has survived not only five centuries, but also the leap into electronic typesetting,
+                    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+
+            </div>
+            
+        </div>
+
+        <div class="experience">
+            <h1 id="xp">EXPERIENCE</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                It has survived not only five centuries, but also the leap into electronic typesetting,
+                remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         
-        <h1>ABOUT ME</h1>
+                <div class="chronologie">
+                    <svg width="1000" height="100">
+                        <line x1="0" y1="50" x2="1000" y2="50" style="stroke:white; stroke-width:1.5"></line>
+            
+                        <circle cx="150" cy="50" r="10" stroke="#0F0E0F" stroke-width="6" fill="#4CB944"></circle>
+                        <text text-anchor="middle" x="150" y="80" fill="white">2012</text>
+                        <text font-size="13" text-anchor="middle" x="70" y="30" fill="white">Master Degree</text>
+                        <text style="font-style: italic" font-size="13" text-anchor="middle" x="70" y="80" fill="#808080">Mtp
+                          Supagro</text>
+            
+                        <circle cx="450" cy="50" r="10" stroke="#0F0E0F" stroke-width="6" fill="#4CB944"></circle>
+                        <text text-anchor="middle" x="450" y="80" fill="white">2016</text>
+                        <text font-size="13" text-anchor="middle" x="300" y="30" fill="white">Data Analyst</text>
+                        <text style="font-style: italic" font-size="13" text-anchor="middle" x="300" y="80" fill="#808080">French
+                          Institute of Research</text>
+            
+                        <circle cx="650" cy="50" r="10" stroke="#0F0E0F" stroke-width="6" fill="#4CB944"></circle>
+                        <text text-anchor="middle" x="650" y="80" fill="white">2017</text>
+                        <text font-size="13" text-anchor="middle" x="550" y="30" fill="white">Data analyst</text>
+                        <text style="font-style: italic" font-size="13" text-anchor="middle" x="550" y="80" fill="#808080">Terres
+                          Inovia</text>
+            
+                        <circle cx="850" cy="50" r="10" stroke="#0F0E0F" stroke-width="6" fill="#4CB944"></circle>
+                        <text text-anchor="middle" x="850" y="80" fill="white">2019</text>
+                        <text font-size="13" text-anchor="middle" x="750" y="30" fill="white">Data visualization</text>
+                        <text style="font-style: italic" font-size="13" text-anchor="middle" x="750" y="80" fill="#808080">Qld Brain
+                          Institute</text>
+            
+                        <text font-size="13" text-anchor="middle" x="930" y="30" fill="white">Data - Science - Viz</text>
+                        <text style="font-style: italic" font-size="13" text-anchor="middle" x="930" y="80" fill="#808080">Freelance</text>
+            
+                      </svg>
+                </div>
+        </div>
+        <div class="portfolio">
+            <h1 id="pf">PORTFOLIO</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                It has survived not only five centuries, but also the leap into electronic typesetting,
+                remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+        <div class="contact">
+            <h1 id="ct">CONTACT</h1>
+            <p>Les différents réseaux sociaux, n'hésiter pas à me contacter</p>
+        </div>
 
+        <div id="map"></div>
+
+        <footer>Copyright</footer>
        
-
+        <script src="portfolioScripts.js"></script>
         <script src="particules/particles.js"></script>
         <script src="particules/app.js"></script>
-        <script src="portfolioScripts.js"></script>
     </body>
 </html>
