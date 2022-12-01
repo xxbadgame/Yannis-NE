@@ -3,6 +3,11 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: Poppins;
+    
+}
+
+body{
+    min-width:300px;
 }
 
 #particles-js{
@@ -29,29 +34,8 @@
 
 .banner .navigation{
     display: flex;
-    margin-right: 20px;
+    margin-right: 5%;
 }
-
-/*
-.banner img{
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-}
-
-.banner .navigation{
-    height: 95px;
-    display: flex;
-    position: fixed;
-    top: 10px;
-    right: 60px;
-    list-style: none;
-}
-
-*/
 
 
 .btnNav a{
@@ -191,28 +175,26 @@
 }
 
 .details-about{
-    width: 80vw;
     display: flex;
     align-items: center;
     position: relative;
-    left: 10%;
+    left: 25%;
 }
 
 .aboutme .details-about img{
     width: 300px;
     height: 300px;
     object-fit: contain;
-    margin: 30px;
+    margin-right: 70px;
     justify-content: center;
 }
 
 .aboutme .details-about p{
-    object-fit: contain;
+    max-width: 500px;
     text-align: start;
 }
 
 .experience{
-    text-align: center;
     min-height: 100vh;
     background-color: #000;
     color: white;
@@ -220,11 +202,19 @@
 
 .experience h1{
     padding: 100px;
+    text-align: center;
 }
 
-.experience img{
-    width: 100px;
-    height: 100px;
+.experience p{
+    padding-inline: 25%;
+    padding-bottom: 15%;
+    text-align: center;
+}
+
+.experience .chronologie{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .portfolio{
@@ -268,8 +258,8 @@ footer{
     padding: 50px 0px;
 }
 
-@media screen and (max-width : 900px){
-    .chronologie{
+@media screen and (max-width : 1000px){
+    .experience .chronologie{
         display: none;
     }
 
@@ -284,5 +274,15 @@ footer{
         align-items: center;
         position: relative;
         left: 10%;
+    }
+    .aboutme .details-about img{
+        width: 150px;
+        height: 150px;
+        object-fit: contain;
+        margin-right: 0px;
+        align-items: center;
+    }
+    .aboutme .details-about p{
+        text-align: center;
     }
 }
