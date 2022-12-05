@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
     crossorigin=""/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
      crossorigin=""></script>
@@ -61,24 +62,33 @@
             <h1 id="am">ABOUT ME</h1>
             <div class="details-about">
                 <img src="image/moiC.jpg" alt="photo">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    It has survived not only five centuries, but also the leap into electronic typesetting,
-                    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                <p>Hi, i'm Yannis
+                    <br>
+                    Welcome on the website of my portfolio. 
+                    I'study in IUT Lumière lyon 2 in Data Science who was called Statistic and Decisional informatic
+                    As you can see the school is not my only passion ! I have make lot of project in all sector of informatic
+                    and now i try to mix this with economics or company data to complete my profil. 
+                    In my portfolio you will can find school project, kaggle project and project create by me.
+                    If you love my projects, you can contact me down below in this page. 
+                    Have a good time !
                 </p>
             </div>
 
             <div class="cometences">
              
 
-                <button id="btnModal">Data mining</button>
+                <!-- Trigger/Open The Modal -->
+                <button id="myBtn">Open Modal</button>
+
+                <!-- The Modal -->
                 <div id="myModal" class="modal">
-                    <div class="modalContent">
-                        <span class="close">&times;</span>
-                        <h1>ceci est mon modal de dm</h1>
-                    </div>
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Some text in the Modal..</p>
+                </div>
+
                 </div>
 
                 <button id="btnModal">Data managment</button>
@@ -110,67 +120,66 @@
 
         <div class="experience">
             <h1 id="xp">EXPERIENCE</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                It has survived not only five centuries, but also the leap into electronic typesetting,
-                remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>
+                Here is my professional experience but i have follow lot of courses in openClassroom and Udemy
+                because i love learn by myself.
+                
+            </p>
         
                 <div class="chronologie">
-                    <svg width="1000" height="100">
-                        <line x1="0" y1="50" x2="1000" y2="50" style="stroke:white; stroke-width:1.5"></line>
+                    <svg width="1100" height="100">
+                        <line x1="0" y1="50" x2="1100" y2="50" style="stroke:white; stroke-width:1.5"></line>
             
                         <circle cx="150" cy="50" r="10" stroke="#0F0E0F" stroke-width="6" fill="#4CB944"></circle>
-                        <text text-anchor="middle" x="150" y="80" fill="white">2012</text>
-                        <text font-size="13" text-anchor="middle" x="70" y="30" fill="white">Master Degree</text>
-                        <text style="font-style: italic" font-size="13" text-anchor="middle" x="70" y="80" fill="#808080">Mtp
-                          Supagro</text>
-            
-                        <circle cx="450" cy="50" r="10" stroke="#0F0E0F" stroke-width="6" fill="#4CB944"></circle>
-                        <text text-anchor="middle" x="450" y="80" fill="white">2016</text>
-                        <text font-size="13" text-anchor="middle" x="300" y="30" fill="white">Data Analyst</text>
-                        <text style="font-style: italic" font-size="13" text-anchor="middle" x="300" y="80" fill="#808080">French
-                          Institute of Research</text>
+                        <text text-anchor="middle" x="150" y="80" fill="white">2019</text>
+                        <text font-size="13" text-anchor="middle" x="70" y="30" fill="white">Internship</text>
+                        <text style="font-style: italic" font-size="13" text-anchor="middle" x="70" y="80" fill="#808080">Monnet Sève</text>
+                        
+                        <text font-size="13" text-anchor="middle" x="300" y="30" fill="white">High School</text>
+                        <text style="font-style: italic" font-size="13" text-anchor="middle" x="300" y="80" fill="#808080">Lycée Xavier Bichat</text>
             
                         <circle cx="650" cy="50" r="10" stroke="#0F0E0F" stroke-width="6" fill="#4CB944"></circle>
-                        <text text-anchor="middle" x="650" y="80" fill="white">2017</text>
-                        <text font-size="13" text-anchor="middle" x="550" y="30" fill="white">Data analyst</text>
-                        <text style="font-style: italic" font-size="13" text-anchor="middle" x="550" y="80" fill="#808080">Terres
-                          Inovia</text>
+                        <text text-anchor="middle" x="650" y="80" fill="white">2022</text>
+                        <text font-size="13" text-anchor="middle" x="500" y="30" fill="white">Operaters & Services</text>
+                        <text style="font-style: italic" font-size="13" text-anchor="middle" x="500" y="80" fill="#808080">Eni Stratto</text>
             
                         <circle cx="850" cy="50" r="10" stroke="#0F0E0F" stroke-width="6" fill="#4CB944"></circle>
-                        <text text-anchor="middle" x="850" y="80" fill="white">2019</text>
-                        <text font-size="13" text-anchor="middle" x="750" y="30" fill="white">Data visualization</text>
-                        <text style="font-style: italic" font-size="13" text-anchor="middle" x="750" y="80" fill="#808080">Qld Brain
-                          Institute</text>
+                        <text text-anchor="middle" x="850" y="80" fill="white">2023</text>
+                        <text font-size="13" text-anchor="middle" x="750" y="30" fill="white">Statistical survey</text>
+                        <text style="font-style: italic" font-size="13" text-anchor="middle" x="750" y="80" fill="#808080">CCAS</text>
             
-                        <text font-size="13" text-anchor="middle" x="930" y="30" fill="white">Data - Science - Viz</text>
-                        <text style="font-style: italic" font-size="13" text-anchor="middle" x="930" y="80" fill="#808080">Freelance</text>
+                        <text font-size="13" text-anchor="middle" x="975" y="30" fill="white">Assistant Data analyst</text>
+                        <text style="font-style: italic" font-size="13" text-anchor="middle" x="975" y="80" fill="#808080">Your company</text>
             
                       </svg>
                 </div>
         </div>
         <div class="portfolio">
             <h1 id="pf">PORTFOLIO</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                It has survived not only five centuries, but also the leap into electronic typesetting,
-                remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>
+                You are here for this, all my project and how i realise them. <br>
+                I hope you will like read them at the same point i have take pleasure to do them !
+            </p>
+
+            <table><p>stack of projects soon</p></table>
         </div>
         <div class="contact">
             <h1 id="ct">CONTACT</h1>
-            <p>Les différents réseaux sociaux, n'hésiter pas à me contacter</p>
+            <p>
+                The section is all means to contact me. <br> You can find all you needs to know about me <br>
+                and if you have impression you don't need me (but it's impossible) <br>
+                you can share my portfolio to people who have data ;)
+            
+            </p>
         </div>
 
         <div id="map"></div>
 
-        <footer>Copyright</footer>
+        <footer>Copyright 2022</footer>
        
         <script src="portfolioScripts.js"></script>
         <script src="particules/particles.js"></script>
         <script src="particules/app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
 </html>
