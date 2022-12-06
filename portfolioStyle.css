@@ -287,3 +287,7 @@ footer{
         text-align: center;
     }
 }
+
+.modal-content{
+    color: black;
+}
