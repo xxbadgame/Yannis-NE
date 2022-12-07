@@ -37,12 +37,18 @@ body{
 .banner .navigation{
     display: flex;
     margin-right: 5%;
+    list-style: none;
 }
 
 
 .btnNav a{
-    color: white;
     text-decoration: none;
+    color: white;
+}
+
+.btnNav a:hover{
+    text-decoration: none;
+    color: white;
 }
 
 .btnNav{
@@ -50,7 +56,6 @@ body{
     border: none;
     cursor: pointer;
     font-size: 20px;
-    text-decoration: none;
     margin: 25px;
 }
 
@@ -62,6 +67,7 @@ body{
     display: block;
     transition: .5s ease-in-out;
   }
+
   
 .btnNav:hover::after{
     content: '';
@@ -70,8 +76,6 @@ body{
     background-color: #4CB944;
     display: block;
   }
-
-
 
 .presentation{
     position: absolute;
@@ -91,7 +95,9 @@ body{
     position: absolute;
     left: 50%;
     transform: translate(-50%,-50%);
-    border: 0.5px solid #4CB944;
+    border: 0.4px solid #4CB944;
+    color: #4CB944;
+    opacity: 1;
 }
 
 .presentation p{
