@@ -120,6 +120,7 @@ body{
     border: 2px solid #4CB944;
     border-radius: 5px;
     transition-duration: 0.4s;
+    color: white;
 }
 
 .presentation .btn:hover{
@@ -296,4 +297,57 @@ footer{
 
 .modal-content{
     color: black;
+}
+
+.competences{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15vh;
+    justify-content: space-between;
+}
+
+.competences button{
+    outline: none;
+    width: 100px;
+    height: 100px;
+    font-size: 30px;
+    background: none;
+    border-radius: 100%;
+    border: 2px solid #4CB944;
+    color: #4CB944;
+    margin: 15px;
+}
+
+.competences button:focus{
+    background: none;
+    border: 2px solid #4CB944;
+    outline:none;
+}
+
+.competences button:hover{
+    content: '';
+    background-color: #4CB944;
+    border-color: #4CB944;
+    outline:none;
+}
+
+.competences .modal-title{
+    color: #4CB944;
+}
+
+.under-comp-title{
+    color: #4CB944;
+    font-size: 25px;
+}
+
+.dataBlock{
+    width: 240px;
+}
+
+.dataBlock p{
+    font-size: 16px;
+}
+
+.projets{
+    display: flex;
 }
