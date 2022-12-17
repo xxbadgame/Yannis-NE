@@ -6,3 +6,21 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 var marker = L.marker([45.764043, 4.835659]).addTo(map);
+
+const sr = ScrollReveal();
+sr.reveal('h1',{
+    origin : 'bottom',
+    duration : 3000,
+    distance : '30px',
+    reset : true,
+    scale : 0.2
+});
+
+
+sr.reveal('.presentation p',{
+    origin : 'bottom',
+    duration : 8000,
+    distance : '30px',
+    reset : true,
+    scale : 0.2
+});

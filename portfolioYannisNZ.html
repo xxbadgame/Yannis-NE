@@ -14,6 +14,7 @@
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
      crossorigin=""></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Portfolio</title>
 </head>
     <header>
@@ -34,23 +35,23 @@
                 <div class="logoArea">
                     <ul>
                         <li>
-                            <a href="https://fr-fr.facebook.com/">
+                            <a href="https://fr-fr.facebook.com/" target="_blank">
                                 <i class="fa-brands fa-facebook-f"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/in/yannis-nzue-essono-0089571a6/">
+                            <a href="https://www.linkedin.com/in/yannis-nzue-essono-0089571a6/" target="_blank">
                                 <i class="fa-brands fa-linkedin-in"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://github.com/xxbadgame">
+                            <a href="https://github.com/xxbadgame" target="_blank">
                                 <i class="fa-brands fa-github"></i>
                             </a>
                         </li>
                     </ul>
                 </div>
-                <p>This is my portfolio</p>
+                <p>ON MY PORTFOLIO</p>
                 <a href="#am"><button class="btn">VISIT</button></a>
                 <a href="#ct"><button class="btn">CONTACT</button></a>
             </div>
@@ -70,7 +71,7 @@
                     School is only a small part in my life. Indeed I have a lot of projects
                     and many are in the making in every field of Informatic but i also improve my work
                     through economy and company data. In that website you will be able to find all my <a href="#pf">projects</a> : <br>
-                    in school, <a href="https://www.kaggle.com/">kaggle</a>'s ones and obviously mines.
+                    in school, <a href="https://www.kaggle.com/" target="_blank">kaggle</a>'s ones and obviously mines.
                     If you're interested in me, contact me down below !
                 </p>
             </div>
@@ -237,132 +238,184 @@
             
                       </svg>
                 </div>
+                
+                <div class="chronologie-vert">
+                    <svg width="500" height="1100">
+                        <line x1="250" y1="0" x2="250" y2="1100" style="stroke:white; stroke-width:1.5"></line>
+            
+                        <circle cx="250" cy="250" r="10" stroke="#0F0E0F" stroke-width="6" fill="#4CB944"></circle>
+                        <text text-anchor="middle" x="200" y="255" fill="white">2019</text>
+                        <text font-size="13" text-anchor="middle" x="150" y="125" fill="white">Internship</text>
+                        <text style="font-style: italic" font-size="13" text-anchor="middle" x="350" y="125" fill="#808080">Monnet Sève</text>
+                        
+                        <text font-size="13" text-anchor="middle" x="150" y="375" fill="white">High School</text>
+                        <text style="font-style: italic" font-size="13" text-anchor="middle" x="350" y="375" fill="#808080">Lycée Xavier Bichat</text>
+            
+                        <circle cx="250" cy="600" r="10" stroke="#0F0E0F" stroke-width="6" fill="#4CB944"></circle>
+                        <text text-anchor="middle" x="200" y="605" fill="white">2022</text>
+                        <text font-size="13" text-anchor="middle" x="125" y="500" fill="white">Operaters & Services</text>
+                        <text style="font-style: italic" font-size="13" text-anchor="middle" x="350" y="500" fill="#808080">Eni Stratto</text>
+            
+                        <circle cx="250" cy="810" r="10" stroke="#0F0E0F" stroke-width="6" fill="#4CB944"></circle>
+                        <text font-size="13" text-anchor="middle" x="125" y="700" fill="white">Statistical survey</text>
+                        <text style="font-style: italic" font-size="13" text-anchor="middle" x="350" y="700" fill="#808080">CCAS</text>
+                        <text text-anchor="middle" x="200" y="810" fill="white">2023</text>
+            
+                        <text font-size="13" text-anchor="middle" x="125" y="950" fill="white">Assistant Data analyst</text>
+                        <text style="font-style: italic" font-size="13" text-anchor="middle" x="350" y="950" fill="#808080">Your company</text>
+            
+                      </svg>
+                </div>
+
+                <div class="chronologie-vert-mobile">
+                    <svg width="300" height="900">
+                        <line x1="150" y1="0" x2="150" y2="900" style="stroke:white; stroke-width:1.5"></line>
+            
+                        <circle cx="150" cy="250" r="10" stroke="#0F0E0F" stroke-width="6" fill="#4CB944"></circle>
+                        <text text-anchor="middle" x="100" y="255" fill="white" font-size="13">2019</text>
+                        <text font-size="12" text-anchor="middle" x="100" y="125" fill="white">Internship</text>
+                        <text style="font-style: italic" font-size="12" text-anchor="middle" x="200" y="125" fill="#808080">Monnet Sève</text>
+                        
+                        <text font-size="12" text-anchor="middle" x="100" y="375" fill="white">High School</text>
+                        <text style="font-style: italic" font-size="12" text-anchor="middle" x="225" y="375" fill="#808080">Lycée Xavier Bichat</text>
+            
+                        <circle cx="150" cy="600" r="10" stroke="#0F0E0F" stroke-width="6" fill="#4CB944"></circle>
+                        <text text-anchor="middle" x="100" y="605" fill="white" font-size="13">2022</text>
+                        <text font-size="12" text-anchor="middle" x="70" y="500" fill="white">Operaters & Services</text>
+                        <text style="font-style: italic" font-size="12" text-anchor="middle" x="200" y="500" fill="#808080">Eni Stratto</text>
+            
+                        <circle cx="150" cy="810" r="10" stroke="#0F0E0F" stroke-width="6" fill="#4CB944"></circle>
+                        <text font-size="12" text-anchor="middle" x="80" y="700" fill="white">Statistical survey</text>
+                        <text style="font-style: italic" font-size="12" text-anchor="middle" x="200" y="700" fill="#808080">CCAS</text>
+                        <text text-anchor="middle" x="100" y="810" fill="white" font-size="13">2023</text>
+            
+                        <text font-size="13" text-anchor="middle" x="125" y="1000" fill="white">Assistant Data analyst</text>
+                        <text style="font-style: italic" font-size="13" text-anchor="middle" x="350" y="1000" fill="#808080">Your company</text>
+            
+                      </svg>
+                </div>
         </div>
-        <div class="portfolio">
-            <h1 id="pf">PORTFOLIO</h1>
+        <div class="portfolio" id="pf">
+            <h1>PORTFOLIO</h1>
             <p>
                 You are here for this, all my project and how i realise them. <br>
                 I hope you will like read them at the same point i have take pleasure to do them !
             </p>
 
-            <div class="projets">
-
-                <!--modal Data Managment-->
-             
-                <button class="d-block mt-5 btn-primary mx-auto" data-bs-toggle="modal" data-bs-target="#modal1">CCAS</button>
-
-                <div class="modal fade" id="modal1">
-
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" aria-label="modal title">
-                                    Modal title
-                                </h5>
-                            </div>
-                                <div class="modal-body" aria-describedby="content">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                        Aut cupiditate vel architecto totam dignissimos laborum? 
-                                    </p>
-                                </div>
-                                <div class="modal-footer">
-                                </div>
-                            </div>
+            <div class="projects">
+                <!--modal CCAS-->
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <i class="fa-solid fa-pen"></i>
+                            <h5>CCAS</h5>
                         </div>
                     </div>
+                    <div class="face face2">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
 
-                <!--modal Data Mining-->
+                <!--modal US crédit score-->
 
-                <button class="d-block mt-5 btn-primary mx-auto" data-bs-toggle="modal" data-bs-target="#modal1">US Credit Score</button>
-
-
-                <div class="modal fade" id="modal1">
-
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" aria-label="modal title">
-                                    Modal title
-                                </h5>
-                            </div>
-                                <div class="modal-body" aria-describedby="content">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                        Aut cupiditate vel architecto totam dignissimos laborum? 
-                                    </p>
-                                </div>
-                                <div class="modal-footer">
-                                </div>
-                            </div>
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <i class="fa-solid fa-flag-usa"></i>
+                            <h5>US Credit Score</h5>
                         </div>
                     </div>
+                    <div class="face face2">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+               
 
-                <!--modal Data Visualization-->
+                <!--modal Crédit Breton-->
 
-                <button class="d-block mt-5 btn-primary mx-auto" data-bs-toggle="modal" data-bs-target="#modal1">Crédit breton</button>
-
-
-                <div class="modal fade" id="modal1">
-
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" aria-label="modal title">
-                                    Modal title
-                                </h5>
-                            </div>
-                                <div class="modal-body" aria-describedby="content">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                        Aut cupiditate vel architecto totam dignissimos laborum? 
-                                    </p>
-                                </div>
-                                <div class="modal-footer">
-                                </div>
-                            </div>
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <i class="fa-solid fa-building-columns"></i>
+                            <h5>Crédit Breton</h5>
                         </div>
                     </div>
+                    <div class="face face2">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
 
-                <!--modal Business Intelligence-->
+                <!--modal Full Bet project-->
 
-                <button class="d-block mt-5 btn-primary mx-auto" data-bs-toggle="modal" data-bs-target="#modal1">FullBet Project</button>
-
-
-                <div class="modal fade" id="modal1">
-
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" aria-label="modal title">
-                                    Modal title
-                                </h5>
-                            </div>
-                                <div class="modal-body" aria-describedby="content">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                        Aut cupiditate vel architecto totam dignissimos laborum? 
-                                    </p>
-                                </div>
-                                <div class="modal-footer">
-                                </div>
-                            </div>
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <i class="fa-solid fa-coins"></i>
+                            <h5>Full Bet Project</h5>
                         </div>
                     </div>
-
-
+                    <div class="face face2">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+               
 
             </div> 
         </div>
         <div id="ct" class="contact">
-            <h1 >CONTACT</h1>
+            <h1>CONTACT</h1>
             <p>
                 The section is all means to contact me. <br> You can find all you needs to know about me <br>
                 and if you have impression you don't need me (but it's impossible) <br>
                 you can share my portfolio to people who have data ;)
             
             </p>
+            <div class="present-contact">
+                <a href="https://github.com/xxbadgame" target="_blank"><button class="btn">GITHUB</button></a>
+                <a href="https://www.linkedin.com/in/yannis-nzue-essono-0089571a6/" target="_blank"><button class="btn">LINKEDIN</button></a>
+            </div>
         </div>
 
         <div id="map"></div>
 
-        <footer>Copyright 2022</footer>
+        <footer>
+            <p>Copyright © Yannis Nzue Essono 2022</p> 
+            <div class="logoArea">
+                <ul>
+                    <li>
+                        <a href="https://fr-fr.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/yannis-nzue-essono-0089571a6/" target="_blank">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/xxbadgame" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footRight">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+            </div>
+            
+
+        </footer>
        
         <script src="portfolioScripts.js"></script>
         <script src="particules/particles.js"></script>
