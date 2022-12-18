@@ -187,22 +187,23 @@ body{
 
 .details-about{
     display: flex;
+    justify-content: center;
     align-items: center;
     position: relative;
-    padding-inline: 25%;
 }
 
 
 .aboutme .details-about img{
     width: 300px;
-    height: 250px;
+    height: 300px;
     object-fit: contain;
     margin-right: 70px;
     justify-content: center;
 }
 
 .aboutme .details-about p{
-    max-width: 500px;
+    min-height: 300px;
+    max-width: 600px;
     text-align: start;
 }
 
@@ -423,8 +424,8 @@ body{
     }
 
     .aboutme .details-about img{
-        width: 150px;
-        height: 150px;
+        width: 250px;
+        height: 250px;
         padding-bottom: 30px;
         object-fit: contain;
         margin-right: 0px;
@@ -540,7 +541,8 @@ body{
     }
 
     .banner img{
-        display: none;
+        width: 60px;
+        height: 60px;
     }
 }
 
