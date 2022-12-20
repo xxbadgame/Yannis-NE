@@ -536,6 +536,7 @@ body{
     border: 2px solid #4CB944;
     color: #4CB944;
     margin: 15px;
+    transition: .5s;
 }
 
 .competences button:focus{
