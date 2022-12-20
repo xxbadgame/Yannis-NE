@@ -24,3 +24,8 @@ sr.reveal('.presentation p',{
     reset : true,
     scale : 0.2
 });
+
+window.addEventListener("scroll", function(){
+    var banner = document.getElementsByClassName('banner');
+    banner[0].classList.toggle("sticky", window.scrollY > 80)
+})
