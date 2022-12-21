@@ -639,7 +639,12 @@ body{
 }
 
 .dataBlock p{
-    font-size: 16px;
+    font-size: 15px;
+}
+
+.key{
+    font-size: 90%;
+    color: #4CB944;
 }
 
 @media screen and (max-width : 670px){
