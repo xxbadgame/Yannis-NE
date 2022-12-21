@@ -29,3 +29,19 @@ window.addEventListener("scroll", function(){
     var banner = document.getElementsByClassName('banner');
     banner[0].classList.toggle("sticky", window.scrollY > 80)
 })
+
+const menuHamburger = document.querySelector("#burger")
+const links = document.querySelector(".nav-links")
+const navLinks = document.querySelector(".nav-links")
+ 
+        menuHamburger.addEventListener('click',()=>{
+            navLinks.classList.toggle('mobile-menu')
+        })
+
+        links.addEventListener('click',()=>{
+            navLinks.classList.toggle('mobile-menu')
+        })
+
+
+
+        

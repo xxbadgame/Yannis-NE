@@ -28,8 +28,12 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    transition: 0.5s;
+    transition: 0.5s linear;
     z-index: 100;
+}
+
+#burger{
+    display: none;
 }
 
 .banner.sticky {
@@ -54,9 +58,13 @@ body{
     height: 70px;
 }
 
-.banner .navigation{
-    height: 100px;
+.banner .nav-links{
+    margin-right: 2%;
+}
+
+.banner .nav-links ul{
     display: flex;
+    width: 100%;
     margin-right: 5%;
     list-style: none;
     align-items: center;
@@ -89,7 +97,7 @@ body{
     background-color: #4CB944;
     display: block;
     transition: .5s ease-in-out;
-  }
+}
 
   
 .btnNav:hover::after{
@@ -98,7 +106,7 @@ body{
     width: 100%;
     background-color: #4CB944;
     display: block;
-  }
+}
 
 .presentation{
     position: absolute;
@@ -417,7 +425,10 @@ body{
     color: white;
 }
 
-#map { height: 300px; }
+#map { 
+    height: 300px;
+    z-index: 1;
+}
 
 @media screen and (max-width : 1000px){
     .presentation h1{
@@ -432,9 +443,74 @@ body{
         display: none;
     }
 
-    .banner .navigation{
-        display: none;
+   .banner .nav-links{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-color: #4CB944;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        margin-left: -100%;
+        transition: all .5s ease-in;
+   }
+
+   .nav-links.mobile-menu{
+        margin-left: 0;
+   }
+
+   .banner .nav-links ul{
+    display: flex;
+    flex-direction: column;
+}
+
+    #burger{
+        display: block;
+        color: white;
+        padding-right: 5%;
+        font-size: 30px;
+        z-index: 1;
     }
+
+
+    .btnNav a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .btnNav a:hover{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .btnNav{
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        margin: 25px;
+    }
+    
+    .btnNav::after{
+        content: '';
+        height: 2px;
+        width: 0%;
+        background-color: white;
+        display: block;
+        transition: .5s ease-in-out;
+    }
+    
+      
+    .btnNav:hover::after{
+        content: '';
+        height: 2px;
+        width: 100%;
+        background-color: white;
+        display: block;
+    }
+
 
     .details-about{
         width: 100%;
@@ -594,9 +670,28 @@ body{
         justify-content: center;
     }
 
+    #burger{
+        font-size: 20px;
+    }
+
+    .banner{
+        height: 60px;
+        align-items: center;
+    }
+
     .banner img{
         width: 60px;
         height: 60px;
+    }
+
+    .banner.sticky {
+        background-color: black;
+        height: 50px;
+    }
+
+    .banner.sticky img{
+        width: 50px;
+        height: 50px;
     }
 }
 
