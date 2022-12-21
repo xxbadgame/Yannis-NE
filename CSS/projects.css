@@ -1,0 +1,14 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Poppins,'Courier New', Courier, monospace;
+    background-color: black;
+}
+
+body{
+    min-width: 312px;
+    overflow-y: visible;
+    overflow-x: hidden;
+    color: white;
+}
