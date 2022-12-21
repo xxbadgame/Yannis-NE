@@ -459,9 +459,10 @@ body{
 
    .nav-links.mobile-menu{
         margin-left: 0;
+        overflow-y: hidden;
    }
 
-   .banner .nav-links ul{
+   .banner .nav-links ul{    
     display: flex;
     flex-direction: column;
 }
