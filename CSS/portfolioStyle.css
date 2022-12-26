@@ -286,6 +286,7 @@ body{
 
 .portfolio p{
     padding-bottom: 50px;
+    padding-inline: 15%;
 }
 
 .portfolio .projects{
